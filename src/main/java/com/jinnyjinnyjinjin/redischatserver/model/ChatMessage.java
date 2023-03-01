@@ -1,5 +1,6 @@
 package com.jinnyjinnyjinjin.redischatserver.model;
 
+import com.jinnyjinnyjinjin.redischatserver.common.MessageType;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -7,10 +8,10 @@ import lombok.Getter;
 @Builder
 public class ChatMessage {
 
-    private String messageType;
+    private MessageType type;
     private String roomId;
     private String sender;
-    private String message;
+    private String content;
     private long userCount;
 
 }
